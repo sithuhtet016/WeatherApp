@@ -1,0 +1,49 @@
+@keyframes linePulse {
+  0% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconPulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.line-graphic {
+  width: 100%;
+}
+
+.line-graphic--animate {
+  animation: linePulse 1.8s ease-in-out infinite;
+}
+
+.line-graphic--delay {
+  animation-delay: 0.2s;
+}
+
+.line-graphic--slow {
+  animation-duration: 2.2s;
+}
+
+.icon-graphic--animate {
+  animation: iconPulse 1.6s ease-in-out infinite;
+}

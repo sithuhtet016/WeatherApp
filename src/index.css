@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    @apply font-inter;
+    min-height: 100vh;
+    min-height: 100svh;
+    min-width: 400px;
+    margin: 0;
+    background-color: #4a90e2;
+    background-image: linear-gradient(to bottom, #b9d6f3, #4a90e2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
