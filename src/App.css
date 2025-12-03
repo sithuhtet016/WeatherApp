@@ -21,6 +21,18 @@
   }
 }
 
+@media (max-width: 399px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 400px;
+    transform: scale(calc(100vw / 400));
+    transform-origin: top center;
+  }
+}
+
 .status-banner {
   margin-top: 12px;
   padding: 8px 16px;
